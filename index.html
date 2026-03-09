@@ -1,346 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vinod | Web Developer</title>
+<title>Vinod Portfolio</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-scroll-behavior:smooth;
-}
-
 body{
-background:#f5f7fb;
+margin:0;
+font-family:Arial;
+background:#f4f4f4;
 }
 
-/* NAVBAR */
+header{
+background:#002147;
+color:white;
+text-align:center;
+padding:30px;
+}
 
 nav{
-background:#0a2540;
-color:white;
-display:flex;
-justify-content:space-between;
-padding:15px 60px;
-position:sticky;
-top:0;
-}
-
-nav h2{
-color:#00c3ff;
+background:#003366;
+text-align:center;
+padding:10px;
 }
 
 nav a{
 color:white;
-margin-left:20px;
 text-decoration:none;
-font-size:16px;
+margin:15px;
+font-size:18px;
 }
-
-/* HERO */
-
-.hero{
-height:90vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(135deg,#0a2540,#1e3c72);
-color:white;
-}
-
-.hero h1{
-font-size:50px;
-}
-
-.hero p{
-margin:15px 0;
-font-size:20px;
-}
-
-.btn{
-background:#00c3ff;
-padding:12px 25px;
-border:none;
-color:white;
-border-radius:5px;
-cursor:pointer;
-}
-
-/* SECTION */
 
 section{
-padding:80px 10%;
-}
-
-.section-title{
+padding:40px;
 text-align:center;
-font-size:35px;
-margin-bottom:40px;
-color:#0a2540;
 }
-
-/* ABOUT */
 
 .about{
-display:flex;
-gap:40px;
-flex-wrap:wrap;
+background:white;
 }
 
-.about img{
-width:250px;
-border-radius:10px;
+.skills{
+background:#e6f0ff;
 }
-
-.about-text{
-max-width:600px;
-}
-
-/* SKILLS */
-
-.skill{
-margin:20px 0;
-}
-
-.bar{
-background:#ddd;
-height:10px;
-border-radius:10px;
-}
-
-.bar span{
-display:block;
-height:10px;
-background:#00c3ff;
-border-radius:10px;
-}
-
-/* PROJECTS */
 
 .projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+background:white;
+}
+
+.contact{
+background:#e6f0ff;
 }
 
 .card{
 background:white;
 padding:20px;
+margin:20px;
+display:inline-block;
+width:250px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+box-shadow:0 0 10px gray;
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:scale(1.05);
+box-shadow:0 0 20px #007bff;
 }
 
-/* SERVICES */
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.service-box{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* CONTACT */
-
-form{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-input,textarea{
-padding:10px;
-border:1px solid #ccc;
+button{
+padding:10px 20px;
+background:#007bff;
+color:white;
+border:none;
 border-radius:5px;
+cursor:pointer;
 }
-
-/* FOOTER */
 
 footer{
-background:#0a2540;
+background:#002147;
 color:white;
 text-align:center;
-padding:20px;
-margin-top:40px;
+padding:15px;
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<header>
+<h1>Vinod</h1>
+<p>Web Developer | IT Student</p>
+</header>
 
 <nav>
-<h2>Vinod</h2>
-<div>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
-<a href="#services">Services</a>
 <a href="#contact">Contact</a>
-</div>
 </nav>
 
-<!-- HERO -->
-
-<section class="hero">
-<div>
-<h1>Hi, I'm Vinod</h1>
-<p>Freelance Web Developer</p>
-<button class="btn" onclick="hire()">Hire Me</button>
-</div>
+<section id="about" class="about">
+<h2>About Me</h2>
+<p>Hello! I'm Vinod, an Information Technology student who loves creating websites and learning web development.</p>
 </section>
 
-<!-- ABOUT -->
+<section id="skills" class="skills">
+<h2>My Skills</h2>
 
-<section id="about">
-
-<h2 class="section-title">About Me</h2>
-
-<div class="about">
-
-<img src="https://picsum.photos/250">
-
-<div class="about-text">
-<p>
-I am an Information Technology student and passionate web developer. 
-I create responsive websites using HTML, CSS and JavaScript. 
-My goal is to build modern and user-friendly websites for businesses and clients.
-</p>
-</div>
-
-</div>
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">JavaScript</div>
+<div class="card">Website Design</div>
 
 </section>
 
-<!-- SKILLS -->
-
-<section id="skills">
-
-<h2 class="section-title">Skills</h2>
-
-<div class="skill">
-HTML
-<div class="bar"><span style="width:90%"></span></div>
-</div>
-
-<div class="skill">
-CSS
-<div class="bar"><span style="width:85%"></span></div>
-</div>
-
-<div class="skill">
-JavaScript
-<div class="bar"><span style="width:70%"></span></div>
-</div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section id="projects">
-
-<h2 class="section-title">Projects</h2>
-
-<div class="projects">
+<section id="projects" class="projects">
+<h2>My Projects</h2>
 
 <div class="card">
 <h3>College Website</h3>
-<p>Responsive college website design.</p>
+<p>Responsive college website created using HTML and CSS.</p>
 </div>
 
 <div class="card">
-<h3>Business Website</h3>
-<p>Website for local business clients.</p>
+<h3>Landing Page</h3>
+<p>Modern landing page design with animations.</p>
 </div>
 
 <div class="card">
 <h3>Portfolio Website</h3>
-<p>Personal developer portfolio.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- SERVICES -->
-
-<section id="services">
-
-<h2 class="section-title">Freelance Services</h2>
-
-<div class="services">
-
-<div class="service-box">
-<h3>Website Development</h3>
-<p>Modern responsive websites for businesses.</p>
-</div>
-
-<div class="service-box">
-<h3>Landing Page</h3>
-<p>High converting landing pages for marketing.</p>
-</div>
-
-<div class="service-box">
-<h3>Website Design</h3>
-<p>Creative UI/UX design for websites.</p>
-</div>
-
+<p>Personal portfolio website to showcase my work.</p>
 </div>
 
 </section>
 
-<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact Me</h2>
+<p>Email: vinod@email.com</p>
+<p>Phone: +91 9876543210</p>
 
-<section id="contact">
-
-<h2 class="section-title">Contact Me</h2>
-
-<form>
-
-<input type="vinod" placeholder="Your Name">
-
-<input type="vino555mass1@gmail.com" placeholder="Your Email">
-
-<textarea rows="Hello, I saw your portfolio website. 
-I need a website for my business. 
-Please contact me." placeholder="Your Message"></textarea>
-
-<button class="btn">Send Message</button>
-
-</form>
-
+<button onclick="message()">Send Message</button>
 </section>
 
 <footer>
-<p>© 2026 Vinod | Freelance Web Developer</p>
+<p>© 2026 Vinod Portfolio</p>
 </footer>
 
 <script>
-
-function hire(){
-alert("Thanks for visiting Vinod's portfolio!");
+function message(){
+alert("Thank you for visiting my portfolio!");
 }
-
 </script>
 
 </body>
